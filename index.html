@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Love Story Demo ❤️</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(135deg, #ff758c, #ff7eb3);
+      color: #ffffff;
+      text-align: center;
+    }
+    .container {
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 20px;
+    }
+    h1 { font-size: 3rem; }
+    h2 { font-weight: 300; margin-bottom: 25px; }
+    .card {
+      background: rgba(255,255,255,0.15);
+      border-radius: 20px;
+      padding: 30px;
+      max-width: 800px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+    }
+    .message { line-height: 1.8; font-size: 1.1rem; }
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+      gap: 14px;
+      margin-top: 25px;
+    }
+    .gallery div {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 6px;
+    }
+    .gallery img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+      border-radius: 14px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.25);
+    }
+    .year { font-size: 0.85rem; font-style: italic; }
+    button {
+      margin-top: 25px;
+      padding: 12px 25px;
+      border: none;
+      border-radius: 30px;
+      background: #fff;
+      color: #ff4f81;
+      font-size: 1rem;
+      cursor: pointer;
+    }
+    .footer { margin-top: 20px; font-style: italic; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Alex ❤️ Jamie</h1>
+    <h2>A Love Story Demo</h2>
+
+    <div class="card">
+      <p class="message">
+        Every love story is beautiful, but this one is our favourite.<br /><br />
+        This personalised website is designed to capture memories, moments,
+        and milestones — all in one beautiful, shareable place.
+      </p>
+
+      <h3>Our Journey Together</h3>
+      <div class="gallery">
+        <div>
+          <img src="demo1.jpg" alt="Memory 1" />
+          <span class="year">Paris · 2019</span>
+        </div>
+        <div>
+          <img src="demo2.jpg" alt="Memory 2" />
+          <span class="year">Beach Trip · 2020</span>
+        </div>
+        <div>
+          <img src="demo3.jpg" alt="Memory 3" />
+          <span class="year">Our Favourite Day · 2022</span>
+        </div>
+      </div>
+
+      <button onclick="showSurprise()">Click for the Surprise 💝</button>
+      <div id="surprise" style="display:none; margin-top:20px;">
+        <p class="message">
+          And I choose you. Every single day.
+        </p>
+        <p class="footer">Music can be added using your own YouTube link</p>
+      </div>
+    </div>
+
+    <div class="footer">Demo version for Etsy listing</div>
+  </div>
+
+  <script>
+    function showSurprise() {
+      document.getElementById('surprise').style.display = 'block';
+    }
+  </script>
+</body>
+</html>
